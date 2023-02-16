@@ -41,6 +41,11 @@ const prodRecursion = ()=>{
 }
 
 //mean value
+const mean = (array) => {
+  const sum = array.reduce((a,b)=>a+b)
+  const count = array.length
+  return sum/count
+}
 
 //median value
 
@@ -48,5 +53,5 @@ const prodRecursion = ()=>{
 
 //Product of all elemtns divided by the factorial of number of elements
 
-console.log(prodReduce([2, 2, 3], 0));
+console.log(mean([1, 2, 3, 2]));
 // countDownRecursion(9);
